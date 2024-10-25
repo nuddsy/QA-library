@@ -7,4 +7,10 @@ CREATE TABLE copy (
     FOREIGN KEY (book_id) REFERENCES book(book_id)
 );
 
-SELECT * FROM user_data;
+SELECT * FROM copy;
+
+INSERT INTO copy (book_id)
+VALUES (1),
+(3),
+(3),
+(2);

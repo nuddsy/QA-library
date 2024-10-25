@@ -1,17 +1,10 @@
 USE library_db;
 
-CREATE TABLE User (
-	user_id INT auto_increment PRIMARY KEY NOT NULL,
-    first_name varchar(50),
-    last_name varchar(50),
-    email varchar(120)
-);
+INSERT INTO user_data(first_name, last_name, email, address)
+VALUE("Rainie", "Tamakloe", "rainie@gmail.com", "71 Salford Street, Salford"),
+("Nasim", "Karimi", "nasim@gmail.com", "3 Main Halifax Street, Halifax"),
+("Princess", "Erhunmwunsee", "princess@gmail.com", "71 Salford Street, Salford"),
+("Matt", "Nudds", "matt@gmail.com", "101 NotMain Salford Street, Salford"),
+("Neva", "Dobric", "neva@gmail.com", "5 Main Salford Street, Salford");
 
-INSERT INTO User
-VALUE(1,"Rainie", "Tamakloe", "rainie@gmail.com"),
-(2,"Nasim", "Karimi", "nasim@gmail.com"),
-(3,"Princess", "Erhunmwunsee", "princess@gmail.com"),
-(4,"Matt", "Nudds", "matt@gmail.com"),
-(5,"Neva", "Dobric", "neva@gmail.com");
-
-SELECT * FROM User;
+SELECT * FROM user_data;

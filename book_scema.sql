@@ -18,6 +18,8 @@ VALUES
     ("Infinity and beyond", 2, 2)
 ;
 
+SELECT * FROM book;
+
 CREATE VIEW v_book_genre_author
 AS
 SELECT 

@@ -30,3 +30,13 @@ CREATE TABLE user_reservation (
 );
 
 SELECT * FROM user_reservation;
+
+INSERT INTO reservation(date_borrowed, date_due, copy_id)
+VALUES("2023-10-18", "2023-10-13", 1),
+("2024-9-12", "2024-9-13", 2),
+("2023-10-5", "2023-10-18", 4);
+
+INSERT INTO user_reservation
+VALUES(3, 1),
+(5, 3),
+(3, 2);

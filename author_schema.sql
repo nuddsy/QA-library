@@ -9,4 +9,7 @@ INSERT INTO author (author_id, first_name, last_name, language)
 VALUES ("Lisa", "Furtado", "Portuguese"),
 ("Will", "Marcus", "English"),
 ("Henry", "Darwin", "English"),
-("Hannah", "Woods", "Spanish")
+("Hannah", "Woods", "Spanish");
+
+ALTER table author
+RENAME column language to _language;

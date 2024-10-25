@@ -6,3 +6,9 @@ CREATE TABLE Genre (
 );
 
 SELECT * FROM Genre;
+
+INSERT INTO genre(genre)
+VALUES("Comedy"),
+("Science Fiction"),
+("Romantic"),
+("Crime");

@@ -18,6 +18,8 @@ VALUES
     ("Infinity and beyond", 2, 2)
 ;
 
+CREATE VIEW v_book_genre_author
+AS
 SELECT 
 	b.title,
     g.genre,
@@ -30,3 +32,5 @@ on b.genre_id = g.genre_id
 INNER JOIN author as a
 on b.author_id = a.author_id
 ;
+
+select * from v_book_genre_author;

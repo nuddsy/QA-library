@@ -18,5 +18,15 @@ VALUES
     ("Infinity and beyond", 2, 2)
 ;
 
-SELECT *
-FROM book;
+SELECT 
+	b.title,
+    g.genre,
+    a.first_name,
+    a.last_name,
+    a._language
+FROM book as b
+INNER JOIN genre as g
+on b.genre_id = g.genre_id 
+INNER JOIN author as a
+on b.author_id = a.author_id
+;

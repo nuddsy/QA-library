@@ -5,11 +5,13 @@ last_name VARCHAR(100) NOT NULL,
 language VARCHAR(50) NOT NULL
 );
 
-INSERT INTO author (author_id, first_name, last_name, language)
+ALTER table author
+RENAME column language to _language;
+
+INSERT INTO author (first_name, last_name, _language)
 VALUES ("Lisa", "Furtado", "Portuguese"),
 ("Will", "Marcus", "English"),
 ("Henry", "Darwin", "English"),
 ("Hannah", "Woods", "Spanish");
 
-ALTER table author
-RENAME column language to _language;
+select * FROM author;

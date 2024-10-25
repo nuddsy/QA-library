@@ -8,4 +8,15 @@ create table book(
     FOREIGN KEY (author_id) REFERENCES author(author_id)
 );
 
-DROP TABLE book;
+-- DROP TABLE book;
+
+INSERT INTO book (title, genre_id, author_id)
+VALUES 
+	("Best Book Ever", 1, 1),
+    ("Sangria fiesta", 3, 4),
+    ("Sangria fatal", 4, 4),
+    ("Infinity and beyond", 2, 2)
+;
+
+SELECT *
+FROM book;
